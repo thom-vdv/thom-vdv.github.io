@@ -2,38 +2,15 @@ format: jb-book
 root: intro.md
 
 parts:
-  - caption: Part with some content
+  - caption: About me
     chapters:
-    - file: some_content/overview.md
-      sections:
-      - file: some_content/text_and_code.ipynb
-  - caption: Exercises
+    - file: some_content/about_me.md
+  - caption: Posts
     chapters:
-    - file: exercises.md
+    - file: blog_home.md
       sections:
-      - file: exercises/001.md
-      - file: exercises/002.md
-      - file: exercises/003.md
-      - file: exercises/004.md
-      - file: exercises/005.md
-      - file: exercises/005a.md
-      - file: exercises/006.md
-      - file: exercises/summary
-    - file: syntax_exercises.md
-      sections:
-      - file: syntax_exercises/007.md
-      - file: syntax_exercises/008.md
-      - file: syntax_exercises/009.md
-      - file: syntax_exercises/010.md
-      - file: syntax_exercises/011.md
-      - file: syntax_exercises/012.md
-      - file: syntax_exercises/013.md
-    - file: extensions.md
-      sections:
-      - file: exercises/007.md
-      - file: extension_exercises/014.md
-      - file: extension_exercises/015.md
-  - caption: Miscellaneous
+      - file: blogs/001.md
+  - caption: Projects
     chapters:
     - file: references.md
     - file: changelog.md

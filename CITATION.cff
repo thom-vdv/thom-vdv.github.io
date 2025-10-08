@@ -20,13 +20,13 @@ preferred-citation:
 #    email: t.r.van.woudenberg@tudelft.nl
 #    affiliation: TeachBooks
 #    orcid: 'https://orcid.org/0000-0002-9536-061X'
-  url: 'https://teachbooks.github.io/template/' # replace with your own URL (book website / publisher link) when you use this template
+  url: 'https://thom-vdv.github.io' # replace with your own URL (book website / publisher link) when you use this template
   identifiers:
     - type: url
-      value: 'https://teachbooks.github.io/template/' # replace with your own URL when you use this template
+      value: 'https://thom-vdv.github.io' # replace with your own URL when you use this template
       description: 'Published book on GitHub Pages'
     - type: url
-      value: 'https://github.com/TeachBooks/template' # replace with your own URL when you use this template
+      value: 'https://thom-vdv.github.io' # replace with your own URL when you use this template
       description: 'GitHub repository'
   abstract: >- # replace with your own abstract when you use this template
     The template allows you to start your own TeachBook and
