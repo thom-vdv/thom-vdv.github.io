@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Thom van der Ven — CV</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Curriculum vitae of Thom van der Ven">
+</head>
+<body>
+  <header class="cv-header">
+    <div class="cv-name">
+      <div class="cv-topname">Thom</div>
+      <div class="cv-bottomname">van der Ven</div>
+    </div>
+    <nav class="cv-nav">
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+    </nav>
+  </header>
+
+  <main class="cv-main">
+    <aside class="cv-side" id="contact">
+      <h3>Contact</h3>
+      <dl>
+        <dt>E-mail</dt><dd>thomvanderven@gmail.com</dd>
+        <dt>Phone</dt><dd>+31 6 11350132</dd>
+        <dt>LinkedIn</dt><dd><a href="https://linkedin.com/in/thom-van-der-ven">linkedin.com/in/thom-van-der-ven</a></dd>
+      </dl>
+    </aside>
+
+    <section class="cv-content">
+      <section id="about" class="cv-section">
+        <h3>About me</h3>
+        <p>I am a hard-working master student with industry experience who pays attention to detail. I am driven by curiosity and enjoy combining data analysis with real-world experimentation. I can work very independently and am a social person. In my personal life I like to hike, play sports, and make music.</p>
+      </section>
+
+      <section id="experience" class="cv-section">
+        <h3>Experience</h3>
+
+        <article class="cv-item">
+          <div class="cv-dates">February 2026 - May 2026</div>
+          <div class="cv-item-body">
+            <h4>Master thesis traineeship</h4>
+            <div class="cv-sub">Helmholtz Zentrum Dresden-Rossendorf | HIF — Freiberg, Germany</div>
+            <ul>
+              <li>Joint master thesis between TU Delft and HZDR | HIF</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="cv-item">
+          <div class="cv-dates">August 2024 - January 2025</div>
+          <div class="cv-item-body">
+            <h4>Assistant R&D Engineer</h4>
+            <div class="cv-sub">Allseas — Delft, the Netherlands</div>
+            <ul>
+              <li>Assisted in creating a preliminary mine plan for a deep-sea mining operation</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="cv-item">
+          <div class="cv-dates">November 2023 - June 2024</div>
+          <div class="cv-item-body">
+            <h4>Project Support Process Engineer</h4>
+            <div class="cv-sub">Climax Molybdenum — Rotterdam, the Netherlands</div>
+            <ul>
+              <li>Worked on quality improvement projects focused on purity and particle size distribution of final product</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="cv-item">
+          <div class="cv-dates">2021 - present</div>
+          <div class="cv-item-body">
+            <h4>Teaching Assistant and Communication Team</h4>
+            <div class="cv-sub">Delft University of Technology</div>
+            <ul>
+              <li>Organizing Open Days</li>
+              <li>Hosting presentations at high schools</li>
+              <li>Co-creation of an introductory python course</li>
+              <li>Creating interactive course books (Teachbooks)</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="cv-item">
+          <div class="cv-dates">2023</div>
+          <div class="cv-item-body">
+            <h4>DAP symposium 2023</h4>
+            <div class="cv-sub">Stichting DAP</div>
+            <p>Organised the 2023 DAP Symposium about Geothermal Energy</p>
+          </div>
+        </article>
+
+      </section>
+
+      <section id="education" class="cv-section">
+        <h3>Education</h3>
+
+        <article class="cv-item">
+          <div class="cv-dates">2024 - 2026</div>
+          <div class="cv-item-body">
+            <h4>MSc - Geo-Resource Engineering</h4>
+            <div class="cv-sub">Delft University of Technology — Delft, the Netherlands</div>
+            <p>Master thesis: Petrology of greisenized granites using cathodo-luminescence microscopy</p>
+          </div>
+        </article>
+
+        <article class="cv-item">
+          <div class="cv-dates">2020 - 2023</div>
+          <div class="cv-item-body">
+            <h4>BSc - Applied Earth Sciences</h4>
+            <div class="cv-sub">Delft University of Technology — Delft, the Netherlands</div>
+            <ul>
+              <li>Minor in Machine Learning and AI</li>
+              <li>Bachelor thesis: automated quantification of lithium-bearing minerals using FTIR</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="cv-item">
+          <div class="cv-dates">2014 - 2020</div>
+          <div class="cv-item-body">
+            <h4>VWO</h4>
+            <div class="cv-sub">Walburg College — Zwijndrecht, the Netherlands</div>
+          </div>
+        </article>
+      </section>
+
+      <section id="skills" class="cv-section">
+        <h3>Skills</h3>
+        <div class="cv-skills-grid">
+          <div>
+            <h4>Programming</h4>
+            <p>Experienced in using Python for data science, machine learning and other applications.</p>
+          </div>
+          <div>
+            <h4>Languages</h4>
+            <ul>
+              <li>Dutch (Native)</li>
+              <li>English (Full professional proficiency)</li>
+              <li>German (Moderate proficiency)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Thom van der Ven
+    <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+  </footer>
+</body>
+</html>
