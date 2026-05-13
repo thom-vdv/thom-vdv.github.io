@@ -157,7 +157,7 @@ footer{
 .cv-picture img{width:100%;height:100%;object-fit:cover;border-radius:0%;border:3px solid var(--glass)}
 
 @media (min-width:880px){
-  .cv-picture img {width:100%}
+  .cv-picture img {width:40%}
 }
 
 @media (max-width:100em){
