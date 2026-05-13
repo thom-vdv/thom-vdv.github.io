@@ -153,11 +153,12 @@ footer{
 .cv-item-body h4{margin:0;font-size:1.02rem}
 .cv-sub{color:var(--muted);margin:6px 0}
 .cv-skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.cv-picture{margin-bottom:18px;text-align:center;width:100%; min-width:400px;overflow:hidden}
+.cv-about{margin: 18px}
+.cv-picture{margin-bottom:18px;text-align:center;width:100%; min-width:200px;overflow:hidden}
 .cv-picture img{width:100%;height:100%;object-fit:cover;border-radius:5%;border:3px solid var(--glass)}
 
 @media (min-aspect-ratio:1){
-  .cv-header-section{flex-direction:row;align-items:stretch;min-height:400px}
+  .cv-header-section{flex-direction:row;align-items:stretch;min-height:200px}
   .cv-picture {width:40%;height:100%;margin-bottom:0}
 }
 
