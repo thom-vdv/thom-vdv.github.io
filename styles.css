@@ -94,11 +94,17 @@ footer{max-width:var(--max-width);margin:48px auto;padding:28px 20px;text-align:
   color:var(--muted);
   font-weight:600;
 }
+
+.cv-header-section{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+
 .cv-item-body h4{margin:0;font-size:1.02rem}
 .cv-sub{color:var(--muted);margin:6px 0}
 .cv-skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cv-picture{margin-bottom:18px;text-align:center}
+.cv-picture img{width:120px;height:120px;object-fit:cover;border-radius:50%;border:3px solid var(--accent)}
 
-@media (max-width:880px){
+
+@media (max-width:100em){
   .cv-main{grid-template-columns:1fr;}
   .cv-dates{width:120px}
   .cv-nav{display:none}
