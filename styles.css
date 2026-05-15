@@ -1,7 +1,7 @@
 :root{
   --bg:#1a1612;
   --bg-dark: #cecdc0;
-  --card:#0f1724bb;
+  --card:#e0dfd2;
   --muted:#637a85;
   --accent:#07A0C3;
   --accent-2:#735f3d;
@@ -66,7 +66,7 @@ main{
 .actions a[style]{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text);font-weight:600}
 
 .card{
-  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  background:var(--card);
   padding:18px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.4);
 }
 .card h3{margin-top:0}
@@ -143,14 +143,65 @@ footer{
 .cv-section h3{margin:0 0 8px}
 .cv-item{display:flex;gap:18px;padding:12px 0;border-bottom:1px dashed rgba(255,255,255,0.03)}
 .cv-dates{
+  position:relative;
   min-width:30%;
-  color:var(--muted);
-  font-weight:600;
+  padding:2px 0 2px 18px;
+  color:var(--text);
+  font-weight:700;
+  letter-spacing:0.01em;
+}
+
+.cv-dates::before{
+  content:"";
+  position:absolute;
+  left:2px;
+  top:0.45em;
+  bottom:-0.45em;
+  width:2px;
+  background:linear-gradient(180deg, var(--accent), rgba(7,160,195,0.15));
+}
+
+.cv-dates::after{
+  content:"";
+  position:absolute;
+  left:-3px;
+  top:0.45em;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:var(--bg-dark);
+  border:2px solid var(--accent);
+  box-shadow:0 0 0 4px rgba(7,160,195,0.12);
+}
+
+.cv-item:first-of-type .cv-dates::before{
+  top:0.5em;
+}
+
+.cv-item:last-of-type .cv-dates::before{
+  bottom:0.5em;
+}
+
+.cv-item:last-of-type .cv-dates::before{
+  background:linear-gradient(180deg, rgba(7,160,195,0.15), var(--accent));
 }
 
 .cv-header-section{display:flex;flex-direction:column;gap:12px;margin-bottom:18px}
 
-.cv-item-body h4{margin:0;font-size:1.02rem}
+.cv-item-body{
+  background:linear-gradient(180deg, var(--card), var(--card));
+  padding:18px;
+  border-radius:var(--radius);
+  box-shadow:0 6px 20px rgba(2,6,23,0.4);
+  width: 100%;
+}
+
+.cv-item-body h4{
+  margin:0;
+  font-size:1.02rem;
+
+}
+
 .cv-sub{color:var(--muted);margin:6px 0}
 .cv-skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .cv-about{margin: 18px}
@@ -166,4 +217,17 @@ footer{
   .cv-main{grid-template-columns:1fr;}
   .cv-dates{width:120px}
   .cv-nav{display:none}
+}
+
+@media (max-width:760px){
+  .cv-item{flex-direction:column;gap:10px}
+
+  .cv-dates{
+    min-width:0;
+    padding-left:16px;
+  }
+
+  .cv-item-body{
+    margin-left:16px;
+  }
 }
