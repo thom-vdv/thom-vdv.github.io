@@ -1,11 +1,11 @@
 :root{
   --bg:#1a1612;
-  --bg-dark: #cecdc0;
-  --card:#e0dfd2;
-  --muted:#637a85;
-  --accent:#07A0C3;
+  --bg-dark: #FAFAFA;
+  --card:#FFFFFF;
+  --muted:#827b73;
+  --accent:#f05d5e;
   --accent-2:#735f3d;
-  --text:#0b3142;
+  --text:#413e3a;
   --glass: rgba(255,255,255,0.04);
   --radius:12px;
   --max-width:1100px;
@@ -27,29 +27,47 @@ header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:20px 28px;
+  padding:10px 28px;
   max-width:var(--max-width);
   background-color: var(--bg-dark);
-  margin:18px auto 0;
+  margin:15px auto 15px;
 }
 .logo{
-  font-weight:700;
-  letter-spacing:2px;
-  font-size:1.5rem;
+  font-weight:200;
+  font-family:'Mozilla Headline', sans-serif;
+  letter-spacing:4px;
+  font-size:2rem;
 }
 .logo a {
   color:var(--text);
   text-decoration: none;
 }
 
-
-nav a{color:var(--text);text-decoration:none;margin-left:18px;font-weight:600}
+nav a{color:var(--text);text-decoration:none;margin-left:18px;font-weight:250}
 nav a:hover{color:var(--muted)}
+
+cover-img{
+  margin:0;
+}
+
+img{
+  border: 0;
+}
+
+.topImage {
+    opacity: var(--mix, 0);
+}
+
+img.full-width{
+  width:100vw;
+  object-fit:scale-down;
+  margin-bottom:28px;
+}
 
 main{
   max-width:var(--max-width);
-  margin:36px auto;
-  padding:0 20px;
+  margin:0px;
+  padding:0px;
   background-color: var(--bg-dark);
 }
 
@@ -76,8 +94,8 @@ main{
 
 footer{
   max-width:var(--max-width);
-  margin:48px auto;
-  padding:20px 30px;
+  margin:15px auto;
+  padding:10px 10px;
   display:flex;
   justify-content: space-between;
   align-items:center;
@@ -93,7 +111,7 @@ footer{
   gap:14px;
 }
 
-.footer-socials a{
+.footer-socials a {
   display:inline-flex;
   align-items:center;
   justify-content:center;
@@ -114,7 +132,6 @@ footer{
 }
 
 .footer-copy{text-align:center}
-
 
 @media (max-width:880px){
   .hero{grid-template-columns:1fr;}
@@ -230,4 +247,37 @@ footer{
   .cv-item-body{
     margin-left:16px;
   }
+}
+
+/* Cover image crossfade */
+.cover-img{
+  position:relative;
+  width:100vw;
+  height:80vh;
+  max-height:600px;
+  overflow:hidden;
+  margin:0 0 28px 0;
+}
+.cover-img img{
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:100vw;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:opacity 0ms ease;
+}
+.cover-img .cover-canvas{
+  position:absolute;
+  inset:0;
+  display:block;
+  pointer-events:none;
+}
+.cover-img .cover-bottom{z-index:1;opacity:1}
+.cover-img .cover-top{z-index:2;opacity:0;pointer-events:none}
+
+@media (max-width:760px){
+  .cover-img{height:40vh}
 }

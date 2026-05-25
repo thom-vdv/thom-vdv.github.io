@@ -4,12 +4,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Thom van der Ven — Personal Homepage</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  	<link href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap" rel="stylesheet">
 	<meta name="description" content="Personal website of Thom van der Ven. Projects, about and contact.">
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 	<header>
-		<div class="logo">Thom van der Ven</div>
+		<div class="logo">THOM VAN DER VEN</div>
 		<nav>
 			<a href="about_me.html">About me</a>
 			<a href="cv.html">CV</a>
@@ -19,41 +23,13 @@
 	</header>
 
 	<main>
-		<section class="hero">
-			<div>
-				<h1>Thom van der Ven</h1>
-				<p class="lead">Welcome to my personal website! I am a master student in Geo-Resource Engineering at TU Delft. Take a look around, and feel free to get in touch!</p>
-				<div class="actions">
-					<a href="#projects">See projects</a>
-					<a href="#contact" style="background:transparent;border:1px solid rgba(255,255,255,0.06)">Get in touch</a>
-				</div>
-			</div>
-			<div class="card">
-				<h3>Quick info</h3>
-				<p class="muted">Location: Remote · Available for freelance</p>
-				<p class="muted">Python, Data Science, Machine Learning, Geology, Mineralogy</p>
-			</div>
-		</section>
+		<div class="cover-img" id="coverimage">
+			<!-- bottom image -->
+			<img id="bottomImage">
 
-		<section id="about" class="cards">
-			<article class="card">
-				<h3>About me</h3>
-				<p class="muted">I'm a developer focused on building approachable tools and clean user experiences. I enjoy automation and small, well-tested projects.</p>
-			</article>
-			<article id="projects" class="card">
-				<h3>Selected projects</h3>
-				<ul class="muted">
-					<li><strong>Project A</strong> — small web app for X</li>
-					<li><strong>Project B</strong> — automation tool for Y</li>
-				</ul>
-			</article>
-			<article id="contact" class="card">
-				<h3>Contact</h3>
-				<p class="muted">Email: <a href="mailto:thomvanderven@gmail.com" style="color:var(--text)">thomvanderven@gmail.com</a></p>
-				<p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/thom-van-der-ven" style="color:var(--text)">linkedin.com/in/thom-van-der-ven</a></p>
-				<p class="muted">GitHub: <a href="https://github.com/thom-vdv" style="color:var(--text)">github.com/thom-vdv</a></p>
-			</article>
-		</section>
+			<!-- top image -->
+			<img id="topImage" class="topImage">
+		</div>
 	</main>
 
 	<footer>
@@ -72,5 +48,6 @@
 		</div>
 
 	</footer>
+	<script src="main.js"></script>
 </body>
 </html>
