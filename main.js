@@ -44,4 +44,15 @@ viewer.addEventListener("mousemove", (e) => {
 	update(progress);
 });
 
+viewer.addEventListener("touchmove", (e) => {
+	const rect = viewer.getBoundingClientRect();
+
+	let progress =
+		(e.clientX - rect.left) / rect.width;
+
+	progress = Math.max(0, Math.min(1, progress));
+
+	update(progress);
+});
+
 update(0);
