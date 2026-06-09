@@ -1,8 +1,11 @@
 const sources = [
-	"tsxpl1.jpg",
-	"tsxpl2.jpg",
-	"tsxpl3.jpg",
-	"tsxpl4.jpg"
+	"tsxpl1.webp",
+	"tsxpl2.webp",
+	"tsxpl3.webp",
+	"tsxpl4.webp",
+	"tsxpl5.webp",
+	"tsxpl6.webp",
+	"tsxpl1.webp"
 ];
 
 const viewer = document.getElementById("coverimage");
