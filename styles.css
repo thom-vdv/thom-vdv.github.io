@@ -342,3 +342,18 @@ footer{
 @media (max-width:760px){
   .cover-img{height:40vh}
 }
+
+.door-svg{
+  width:64px;
+  height:64px;
+  position:relative;
+  fill:var(--bg-dark);
+}
+
+#door-polygon{
+  transition:transform .2s ease, fill .2s ease;
+}
+
+#door-polygon:hover{
+  fill:rgb(155, 122, 61);
+}
