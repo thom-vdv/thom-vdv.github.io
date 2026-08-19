@@ -13,6 +13,7 @@ const bottomImage = document.getElementById("bottomImage");
 const topImage = document.getElementById("topImage");
 const door = document.getElementById("door-svg");
 const doorlink = document.getElementById("door");
+let progress = 0;
 
 const points = [
   { x: 0, y: 10 },   // top-left
@@ -21,7 +22,8 @@ const points = [
   { x: 0, y: 42 }   // bottom-left
 ];
 
-function update(progress) {
+function update() {
+	console.log("Updating progress:", progress);
 	const segments = sources.length - 1;
 
 	// Convert 0→1 into segment space
@@ -40,29 +42,32 @@ function update(progress) {
 	topImage.src = sources[index + 1];
 
 	viewer.style.setProperty("--mix", mix);
+	progress = (progress + 0.005) % 1;
 }
 
-viewer.addEventListener("mousemove", (e) => {
-	const rect = viewer.getBoundingClientRect();
+// viewer.addEventListener("mousemove", (e) => {
+// 	const rect = viewer.getBoundingClientRect();
 
-	let progress =
-		(e.clientX - rect.left) / rect.width;
+// 	let progress =
+// 		(e.clientX - rect.left) / rect.width;
 
-	progress = Math.max(0, Math.min(1, progress));
+// 	progress = Math.max(0, Math.min(1, progress));
 
-	update(progress);
-});
+// 	update(progress);
+// });
 
-viewer.addEventListener("touchmove", (e) => {
-	const rect = viewer.getBoundingClientRect();
+// viewer.addEventListener("touchmove", (e) => {
+// 	const rect = viewer.getBoundingClientRect();
 
-	let progress =
-		(e.clientX - rect.left) / rect.width;
+// 	let progress =
+// 		(e.clientX - rect.left) / rect.width;
 
-	progress = Math.max(0, Math.min(1, progress));
+// 	progress = Math.max(0, Math.min(1, progress));
 
-	update(progress);
-});
+// 	update(progress);
+// });
+
+setInterval(update, 50);
 
 polygon = document.querySelector("#door-polygon");
 
